@@ -1,0 +1,101 @@
+.ex-1-square {
+ transition: 2s;
+}
+.ex-1-square:hover{
+  background-color: red;
+}
+
+.ex-2-square{
+  transition: 3s;
+}
+.ex-2-square:active{
+  width: 100%;
+}
+/* tenendo premuto il mouse altrimenti passandoci su
+.ex-2-square:hover{
+  width:100%;} */
+
+.ex-3-square{
+  transition: 3s;
+}
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+
+.ex-4-square{
+  transition: 3s;
+}
+.ex-4-square:hover{
+  opacity: 0;
+}
+
+.ex-5-square{
+  transition: 3s;
+}
+.ex-5-square:hover{
+  height: 150px;
+  width: 150px;
+}
+.ex-5-square:active{
+  height: 30px;
+  width: 30px;
+} 
+/* si rimpicciolisce sempre tenendo il mouse premuto */
+
+/* .ex-6-img{
+  transition:3s
+} */
+.ex-6-img:hover{
+  filter: grayscale();
+}
+
+.ex-7-img{
+  transition: 3s;
+}
+.ex-7-img:hover{
+  filter: blur();
+  filter:grayscale();
+}
+
+.ex-8-img{
+  transition: 3s;
+}
+.ex-8-img:hover{
+  filter: blur();
+  filter:grayscale();
+  border-radius: 20px;
+}
+
+.ex-9-img{
+  transition: 3s;
+}
+.ex-9-img:hover{
+  filter: blur();
+  filter:grayscale();
+  border-radius: 20px;
+  width: 200px;
+}
+
+.ex-10-icon {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+      transform: rotate(1turn);
+  }
+}
+
+.ex-11-icon:hover {
+  animation: spinALittleBit 2s linear;
+}
+@keyframes spinALittleBit {
+  0% {
+      transform: rotate(0);
+  }
+  90% {
+      transform: rotate(315deg);
+  }
+  100% {
+      transform: rotate(0);
+  }
+}
